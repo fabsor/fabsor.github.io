@@ -1,14 +1,137 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Fabsorize.me</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Fabian Sörqvist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+    <style>
+     * {
+       box-sizing: border-box;
+     }
+     body {
+       font-size: 16px;
+       font-family: 'Ubuntu', sans-serif;
+       background: #eee;
+       margin: 0;
+       padding: 0;
+
+     }
+     .contact {
+       padding: 10px;
+       background: #fff;
+     }
+     h1 {
+       text-align: center;
+       font-weight: bold;
+     }
+     a {
+       text-decoration: none;
+     }
+     a:hover {
+       text-decoration: underline;
+     }
+     .services .service {
+       display: flex;
+     }
+     .service strong {
+       font-size: .4em;
+       text-transform: uppercase;
+     }
+     .service {
+       text-align: center;
+       margin-bottom: 5px;
+     }
+     .service-icon {
+     }
+     .btc {
+       word-break: break-all;
+     }
+     .service-info {
+       width: 30px;
+       text-align: center;
+     }
+     .services h2 {
+       font-size: 1em;
+       margin-left: 10px;
+       margin-top: 2px;
+       margin-bottom: 0;
+     }
+     .service i, .service strong {
+       display: block;
+     }
+
+     @media only screen and (min-width: 500px) {
+       .services {
+         display: flex;
+         flex-wrap: wrap;
+       }
+       .services .service {
+         display: block;
+         margin: 0 auto;
+       }
+       .service-info {
+         width: auto;
+       }
+       .services h2 {
+         margin: 0;
+         margin-top: 10px;
+       }
+       .contact {
+         max-width: 800px;
+         margin: 20px auto;
+       }
+       .service-icon {
+         display: block;
+         font-size: 3em;
+         margin: auto;
+       }
+     }
+
+    </style>
   </head>
   <body>
-    <center>
-      <h1><blink>Its party time!</blink></h1>
-      <img src="/party.jpg" alt="partytime" width="600" ">
-    </center>
+    <section class="contact">
+      <header>
+        <h1>Fabian Sörqvist</h1>
+      </header>
+      <section class="services">
+        <div class="service">
+          <div class="service-info">
+            <i class="fas fa-envelope service-icon"></i>
+            <strong>Email</strong>
+          </div>
+          <h2><a href="mailto:fabian@sorqvist.nu">fabian@sorqvist.nu</a></h2>
+        </div>
+        <div class="service">
+          <div class="service-info">
+            <i class="fab fa-github service-icon"></i>
+            <strong>Github</strong>
+          </div>
+          <h2><a href="https://github.com/fabsor/">fabsor</a></h2>
+        </div>
+        <div class="service">
+          <div class="service-info">
+            <i class="fab fa-twitter service-icon"></i>
+            <strong>Twitter</strong>
+          </div>
+          <h2><a href="https://twitter.com/fabsor_/">fabsor_</a></h2>
+        </div>
+        <div class="service">
+          <div class="service-info">
+            <i class="fab fa-linkedin service-icon"></i>
+            <strong>Linkedin</strong>
+          </div>
+          <h2><a href="https://www.linkedin.com/in/fabian-s%C3%B6rqvist-b9040a64/">Fabian Sörqvist</a></h2>
+        </div>
+      </section>
+      <section class="info">
+        <p>PGP Key: <a href="https://keybase.io/fabsor/pgp_keys.asc?fingerprint=885f2da0734232aa7e511f7167e62f347b2d2663">67E62F347B2D2663</a></p>
+        <p>Bitcoin adress: <strong class="btc">1NhtJiH3KYxa45RraPDSbTzGtJYCC8Jajy</strong></p>
+        <p>Work: <strong>Leanlab Tech Lead</strong>, <a href="https://digitalist.global">Digitalist Group</a></p>
+      </section>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </body>
 </html>
